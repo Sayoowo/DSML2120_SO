@@ -7,9 +7,9 @@ st.title("👋 My Bio")
 NAME = "Sayo Owolabi"
 PROGRAM = "Computer Science"
 INTRO = (
-    """ My name is Sayo Owolabi and I am studying Comp side at MSU. One fact of mine
-    is I am currently in my last semester. Data visualizations is a great class because
-    I m able to learn from data.""")
+    "My name is Sayo Owolabi and I am studying Computer Science at MSU. "
+    "I am currently in my last semester. Data Visualization is a great class "
+    "because I'm able to learn from data."
 )
 FUN_FACTS = [
     "I love hoops",
@@ -18,7 +18,7 @@ FUN_FACTS = [
 ]
 
 
-PHOTO_PATH = "assets/sayo.jpg" # Put a file in repo root or set a URL
+PHOTO_PATH = "sayo.jpg" # Put a file in repo root or set a URL
 
 
 def find_photo(filename=PHOTO_PATH):
