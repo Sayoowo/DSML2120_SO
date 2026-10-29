@@ -71,3 +71,15 @@ st.caption(f"Last refreshed at: {time.strftime('%H:%M:%S')}")
 if auto_refresh:
     time.sleep(refresh_sec)
     st.rerun()
+# ---------- PLOT 2: Wind over time ----------
+st.subheader("🌬️ Wind Speed Over Time")
+fig_wind = px.area(hist, x="time", y="wind", markers=True,
+                   title="Denver wind speed over time (mph)")
+st.plotly_chart(fig_wind, use_container_width=True)
+
+# ---------- PLOT 3: Temperature vs Wind ----------
+st.subheader("🔵 Temperature vs. Wind")
+fig_scatter = px.scatter(hist, x="wind", y="temperature",
+                         hover_data=["time"],
+                         title="Does wind change with temperature?")
+st.plotly_chart(fig_scatter, use_container_width=True)
